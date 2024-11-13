@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Main Header Styling */
+h1 {
+    background-color: #854c23;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-radius: 5px;
+}
+
+/* Section Headers Styling */
+h2, h3 {
+    color: #ED9455;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Navigation Bar Styling */
+#header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #FFDDAC;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#header a:hover {
+    background-color: #ED9455;
+    color: white;
+}
+
+/* Section Styling */
+div {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border: 2px solid #ED9455;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Information Styling */
+p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 8px 0;
+}
+
+/* Form Styling */
+form {
+    margin-top: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ED9455;
+    outline: none;
+}
+
+/* Submit Button Styling */
+button {
+    background-color: #ED9455;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #FFB06B;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ED9455;
+    transform: scale(0.98);
+}

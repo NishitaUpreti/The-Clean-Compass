@@ -1,0 +1,135 @@
+/* General Body Styling */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Wrapper */
+#main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading Styles */
+  /* Full-width Header/Nav Bar */
+  #header {
+    width: 100%;
+    background-color: #532E1C;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#header:hover {
+    background-color: #8a4518; /* Darken on hover */
+}
+
+#header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+#header a:hover {
+    background-color: #c66532;
+    transform: scale(1.1); /* Scale on hover */
+}
+
+hr {
+    border: 0.5px solid #FFDD99;
+    width: 100%;
+}
+
+/* Box Styling (Larger Tiles) */
+.box {
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+    display: inline-block;
+    margin: 20px;
+    border: 2px solid #ED9455;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #FFF8E1;
+}
+
+.box:hover {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.subbox {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #ED9455;
+}
+
+.box h4 {
+    font-size: 1.1em; /* Adjusted font size */
+    padding: 10px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+/* Specific Subbox Background Images */
+#subbox1 { background-image: url(kerela.jpg); }
+#subbox2 { background-image: url(Suvidha.jpg); }
+#subbox3 { background-image: url(cci.jpg); }
+#subbox4 { background-image: url(coachin.jpg); }
+#subbox5 { background-image: url(hrm1.jpg); }
+#subbox6 { background-image: url(pavgada.jpg); }
+#subbox7 { background-image: url(naomundi.jpg); }
+#subbox8 { background-image: url(andhra-sugar.png); }
+#subbox9 { background-image: url(ultra-tech.jpg); }
+#subbox10 { background-image: url(jindal.png); }
+#subbox11 { background-image: url(LADAKH.jpg); }
+#subbox12 { background-image: url(creda.png); }
+#subbox13 { background-image: url(Sunderbans.webp); }
+#subbox14 { background-image: url(hanley.jpeg); }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #heading h1 {
+        font-size: 1.8em;
+    }
+    
+    #header a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}

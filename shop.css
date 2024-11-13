@@ -1,0 +1,276 @@
+/* Basic Reset and Font Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* Adjust for fixed header */
+}
+
+/* Full-width Header/Nav Bar */
+#header {
+    width: 100%;
+    background-color: #532E1C;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#header:hover {
+    background-color: #8a4518;
+}
+
+#header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#header a:hover {
+    background-color: #c66532;
+    transform: scale(1.1);
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #9d531f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    animation: fadeIn 1s ease-out;
+    background: linear-gradient(to right, #9d531f, #c66532);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subheadings */
+h2 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+/* Panel Styles */
+.panels {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 3px solid #9d531f;
+    color: #9d531f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.panels:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.panels h2 {
+    color: #9d531f;
+    margin-bottom: 10px;
+}
+
+.panels p,
+.panels ul {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Caption */
+table caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    background-color: #ffdd99;
+    border-bottom: 2px solid #994d1c;
+}
+
+/* Table Header */
+table th {
+    padding: 14px 18px;
+    background-color: #9d531f;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+table th:hover {
+    background-color: #994d1c;
+    cursor: pointer;
+}
+
+/* Table Cells */
+table td {
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    background-color: #fffbda;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Alternating Row Colors */
+table tr:nth-child(even) td {
+    background-color: #f1e1c9;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+/* Row Hover Effect */
+table tr:hover td {
+    background-color: #f7d28e;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .panels {
+        padding: 20px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    table caption {
+        font-size: 16px;
+    }
+}
+
+.box {
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #FFFBDA;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #9d531f;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subbox2 h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.subbox2 p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #5d3a1d;
+}
+
+/* Address and Contact Information */
+.subbox2 .address {
+    font-size: 1em;
+    color: #5d3a1d;
+    margin: 8px 0;
+}
+
+.subbox2 .contact-number {
+    font-size: 1em;
+    color: #5d3a1d;
+    margin-bottom: 15px;
+}
+
+/* Direction Button Styling */
+.direction-btn {
+    font-size: 1.1em;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.direction-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
